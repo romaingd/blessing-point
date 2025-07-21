@@ -1,0 +1,65 @@
+{
+  /****************************** Python ******************************/
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit"
+    }
+  },
+  "notebook.formatOnSave.enabled": true,
+  "notebook.codeActionsOnSave": {
+    "notebook.source.fixAll": "explicit",
+    "notebook.source.organizeImports": "explicit"
+  },
+  "autoDocstring.docstringFormat": "numpy-notypes",
+  "autoDocstring.startOnNewLine": true,
+  /* Additional config file that applies only to VSCode, the main settings are in the pyproject.toml */
+  "ruff.configuration": ".vscode/ruff.toml",
+  "python.languageServer": "Pylance",
+  "python.testing.pytestEnabled": true,
+  "python.testing.unittestEnabled": false,
+
+  /****************************** JSON ******************************/
+  "[json][jsonc]": {
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "dprint.dprint"
+  },
+
+  /****************************** SQL ******************************/
+  "[sql]": {
+    "files.trimTrailingWhitespace": false
+  },
+
+  /****************************** YAML ******************************/
+  "[yaml][ansible]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  /****************************** COMMON ******************************/
+  "files.eol": "\n",
+  "files.exclude": {
+    "**/__pycache__": true
+  },
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "editor.rulers": [120],
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "search.useIgnoreFiles": false,
+  "search.exclude": {
+    ".mypy_cache": true,
+    "**.html": true,
+    "**.pyc": true,
+    "**/*.nc": true,
+    "**/*.nf": true,
+    "**/*.xls*": true,
+    "**/*.XLS*": true,
+    "**/.pytest_cache": true,
+    "**/ansible/artifacts/": true
+  },
+  "editor.formatOnSave": true
+}
