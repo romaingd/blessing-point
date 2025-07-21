@@ -15,6 +15,8 @@
   },
   "autoDocstring.docstringFormat": "numpy-notypes",
   "autoDocstring.startOnNewLine": true,
+  /* Keep flake8 for bad reasons, but ignore all flake8 checks, which are already handled by ruff */
+  "flake8.args": ["--ignore=E,F,W,C,N"],
   /* Additional config file that applies only to VSCode, the main settings are in the pyproject.toml */
   "ruff.configuration": ".vscode/ruff.toml",
   "python.languageServer": "Pylance",
@@ -58,6 +60,7 @@
     "**/*.nf": true,
     "**/*.xls*": true,
     "**/*.XLS*": true,
+    "**/cache_cities_buffer*": true,
     "**/.pytest_cache": true,
     "**/ansible/artifacts/": true
   },
