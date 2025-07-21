@@ -1,0 +1,21 @@
+[project]
+name = "blessing-point"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Romain Girard", email = "romain.girard@spinergie.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "matplotlib>=3.10.3",
+    "numpy>=2.3.1",
+    "scikit-learn>=1.7.1",
+    "scipy>=1.16.0",
+    "seaborn>=0.13.2",
+    "torchvision>=0.22.1",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
